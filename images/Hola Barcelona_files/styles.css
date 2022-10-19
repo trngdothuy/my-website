@@ -11,16 +11,11 @@ h1 {
 
 img {
     width:100%;
-    /* height:100%; */
+    height:100%;
     box-sizing: border-box;
     object-fit: cover;
     object-position: center;
 }
-
-.click {
-    display: none;
-}
-
 
 
 
@@ -39,8 +34,6 @@ img {
     grid-template-columns: 1fr 1fr;
     grid-gap: 100px;
 }
-
-
 
 #splash {
     display: flex;
@@ -75,8 +68,6 @@ img {
     width:100%;
     height: 100%;
     box-sizing: border-box;
-    object-fit: cover;
-    object-position: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1em;
@@ -88,7 +79,7 @@ img {
         grid-template-columns: repeat(3, 1fr);
     }
     .imgbig {
-        grid-column: 1 / -1;
+        grid-column: 1 / 4;
     }
 }
 
@@ -96,28 +87,6 @@ img {
     .imgbcn {
         grid-template-columns: repeat(2, 1fr);
     }
-    .imgbig {
-        grid-column: 2 / -1;
-    }
-    #nav {
-        display: none;
-    }
-    .click  { 
-        display: inline-block;
-        transition: transform .5s;
-      -webkit-transition: -webkit-transform .5s;
-        transform: rotate(90deg);
-      }
-    .click:hover {
-        display: inline;
-    }
-
-    .click:hover span {
-        transition: transform .5s;
-      -webkit-transition: -webkit-transform .5s;
-        display: inline-block;
-        transform: rotate(180deg);
-      }
 }
 
 @media all and (max-width: 400px){
@@ -127,15 +96,43 @@ img {
 }
 
 
-/* musttry big screen */
+/* Must try big screen  */
 
 
-.foodCard {
-    width: 100%;
+.food1 {
+    width: 400px;
     position: relative;
+    left: 20px;
+    top: 10px;
     margin: 10px;
 }
 
+.food2 {
+    width: 400px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    padding: 10px;
+}
+
+.food3 {
+    width: 400px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    padding: 10px;
+}
+
+.food4 {
+    width: 400px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    padding: 10px;
+}
+
+
+/* musttry big screen */
 
 .food {
     display: grid;
@@ -143,6 +140,7 @@ img {
     gap: 100px;
     padding: 10px;
 }
+
 
 /* smaller screens */
 /* @media all and (max-width: 700px){
