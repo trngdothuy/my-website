@@ -1,27 +1,61 @@
+* {
+    font-family: "Gill Sans", sans-serif;
+}
+
 body {
     margin: 0;
     text-align: center;
+    background-color: #F0ECCF;
 }
 
 h1 {
-    color: red;
-    size: 50rem;
+    color: #FFB100;
+    font-size: 2.5rem;
     text-align: center;
+    text-shadow: 1px 1px #E64848;
+}
+
+h2 {
+    color: #FFB100;
+    font-size: 1.7rem;
+    text-align: center;
+    text-shadow: 1px 1px #E64848;
+}
+
+button {
+    background-color: #FFB100;
+    color: #E64848;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+button:hover {
+    transform: scale(1.1); /* (120% zoom */
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
 img {
     width:100%;
-    /* height:100%; */
+    height: 100%;
     box-sizing: border-box;
     object-fit: cover;
-    object-position: center;
+      object-position: center;
 }
+
+.foodimg {
+    height: 70%;
+}
+
+
+
 
 .click {
     display: none;
 }
 
-
+.photo-text {
+    margin-bottom: 2em;
+}
 
 
 #nav {
@@ -34,7 +68,7 @@ img {
 }
 
 #top {
-    background-color: pink;
+    background-color: #FBC252;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 100px;
@@ -47,12 +81,12 @@ img {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(./images/bcn.jpg);
+    background-image: url(https://drew.edu/global-education/wp-content/uploads/sites/67/2020/06/Spain_ShortTrec-2021-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    color: pink;
+    color: #FBC252;
 }
 
 .splash-text {
@@ -66,8 +100,22 @@ img {
 
 #where {
     text-align: center;
+    height: 80vh;
+    margin-left: 5em;
+    margin-right: 5em;
 }
 
+#must-visit {
+    text-align: center;
+    margin: 1em
+}
+
+.must-do-photo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    margin: 10px;
+}
 
 /* mustvisit big screen */
 
@@ -78,7 +126,7 @@ img {
     object-fit: cover;
     object-position: center;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1em;
 }
 
@@ -132,8 +180,12 @@ img {
 
 .foodCard {
     width: 100%;
+    /* height: 100%; */
     position: relative;
-    margin: 10px;
+    /* margin: 100px; */
+    /* margin-bottom: 1em; */
+    /* padding: 30px; */
+    /* padding-bottom: 10px; */
 }
 
 
@@ -141,7 +193,20 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 100px;
-    padding: 10px;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#foot {
+    background-color: #FBC252;
+    color: purple;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0.5em;
+    position: sticky;
+    bottom: 0;
 }
 
 /* smaller screens */
